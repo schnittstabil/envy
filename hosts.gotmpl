@@ -1,0 +1,3 @@
+{{ range $host := splitList "," .hosts }}
+{{- $host}}	{{ index $ (print "hosts_" $host) }}
+{{end}}
